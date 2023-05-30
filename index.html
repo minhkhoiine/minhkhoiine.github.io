@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .icon {
+        margin-right: 10px;
+      }
+    </style>
+    <style>
+      p{text-align: left;}
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a class="logo"> <span class="highlighted">Khoi</span>Vu</a>
+
+        <div class="nav-links">
+          <a href="#home" class="nav-item nav-item-active">Home</a>
+          <a href="#about" class="nav-item">About</a>
+          <a href="#services" class="nav-item">Skills</a>
+          <a href="#projects" class="nav-item">Projects</a>
+          <a href="#contact" class="nav-item">Contact</a>
+        </div>
+
+        <button class="toggler">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
+
+      <section class="hero" id="home">
+        <div class="hero-info">
+          <h1 class="title anim"><span class="pinkColor">Khoi Vu</span></h1>
+          <p class="description anim">
+            <font size="+3">Junior majoring in Computer Science at Rutgers University</font>
+          </p>
+      </section>
+    </header>
+
+    <section class="about container" id="about">
+      <div class="about-img">
+        <img src="IMG_1172.png" alt="Khoi Vu" />
+      </div>
+      <div class="about-info">
+        <h2 class="secondery-title">About Me</h2>
+        <p class="description">
+          My full name is Khoi Minh Vu. I am an international student from Viet Nam. I attended to Washington State University before going to Rutgers in the fall 2023.
+        </p>
+        <p class="description">
+          In my spare time, I equip myself with new skills such as iOS development for front-end and AWS for storing data.
+        </p>
+        <p class="description">
+          Besides those technical skills, I am an open-minded person who would like to learn new things from others with different perspective.
+          I am also a fan of soccer and ping pong. I enjoy playing those sports with my friends in my free time.
+          Fun facts: I have traveled to nine states of the United States of America. Therefore, I am open to relocate to any office around the U.S.
+        </p>
+        <p class="description">
+          Fun facts: I have traveled to nine states of the United States of America. Therefore, I am open to relocate to any office around the U.S.
+        </p>
+      </div>
+    </section>
+
+    <section class="services container" id="services">
+      <div class="services-header">
+        <h2 class="secondery-title">Skills</h2>
+      </div>
+      <div class="services-grid grid">
+        <div class="services-item grid-item">
+          <img src="ios-logo.png" alt="iOS development" />
+          <h3 class="services-item-title">iOS development</h3>
+          <p class="description">
+            - Swift, SwiftUI, SDK(Software Development Kit)
+          </p>
+          <p class="description">
+            - Linux, Bash, Git
+          </p>
+          <p class="description">
+            - NodeJS, JSON, REST APIs, Core Data, Swift Codable Protocol
+          </p>
+          <p class="description">
+            - User Interface Design
+          </p>
+          <p class="description">
+            - React Basic, React Native
+          </p>
+        </div>
+        <div class="services-item grid-item">
+          <img src="109-1091017_application-development-site-icon-white-png.png" alt="Web development" 
+          />
+          <h3 class="services-item-title">Web development</h3>
+          <p class="description">
+            - HTML, Javascript, CSS
+          </p>
+          <p class="description">
+            - Responsive design
+          </p>
+          <p class="description">
+            - Testing and debugging
+          </p>
+          <p class="description">
+            - Search engine optimization
+          </p>
+        </div>
+        <div class="services-item grid-item">
+          <img src="2166823.png" alt="Back-end development" 
+          />
+          <h3 class="services-item-title">Back-end development</h3>
+          <p class="description">
+            - Python, Java
+          </p>
+          <p class="description">
+            - Database: MySQL, MongoDB
+          </p>
+          <p class="description">
+            - Testing: Integration testing, Unit testing, Functional testing
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects container" id="projects">
+      <div class="project-header">
+        <h2 class="secondery-title">Projects</h2>
+      </div>
+
+      <div class="project-tabs">
+        <button class="project-tab-item project-tab-item-active" id="all">
+          All
+        </button>
+        <button class="project-tab-item" id="design">iOS development</button>
+        <button class="project-tab-item" id="seo">Web development</button>
+        <button class="project-tab-item" id="ui-ux">UI/UX</button>
+      </div>
+
+      <div class="project-grid grid">
+        <div class="project-grid-item grid-item all design">
+          <a href="https://github.com/minhkhoiine/Tic-Tac-Toe-swift">
+          <img src="tic-tac-toe-icon-2048x2048-g58f0u84.png" alt=""/> 
+            <p class="secondery-title">
+              <font size="+3">Tic Tac Toe game</font>
+            </p>
+            <p class="description">
+              - Using Swift and SwiftUI to build a simple tic tac toe app with three levels of difficulties: Easy, Medium, and Hard.
+            </p>
+            <p class="description">
+              - 
+            </p>
+          </a>
+        </div>
+        <div class="project-grid-item grid-item all design">
+          <img src="./images/project-2.png" alt="" />
+        </div>
+        <div class="project-grid-item grid-item all seo">
+          <img src="./images/project-3.png" alt="" />
+        </div>
+        <div class="project-grid-item grid-item all seo">
+          <img src="./images/project-4.png" alt="" />
+        </div>
+        <div class="project-grid-item grid-item all ui-ux">
+          <img src="./images/project-5.png" alt="" />
+        </div>
+        <div class="project-grid-item grid-item all ui-ux">
+          <img src="./images/project-6.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="contact container" id="contact">
+      <div class="contact-info">
+        <div class="contact-header">
+          <h2 class="secondery-title">Contact Me</h2>
+        </div>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-item-info">
+              <h3>Address</h3>
+              <p>1202 North 10th Place</p>
+              <p>Apartment 1502</p>
+              <p>Renton, Washington 98057</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-item-info">
+              <h3>Email</h3>
+              <p>minhkhoi.vu143@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="contact-item-info">
+              <h3>Phone</h3>
+              <p>(206) 973-6002</p>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/khoi-vu-ba0738175/ "><i class="fa-brands fa-linkedin fa-3x"></i></a>
+            <span class="icon"></span> <a href="https://github.com/minhkhoiine"><i class="fa-brands fa-github fa-3x"></i></a>
+            <span class="icon"></span> <a href="https://www.facebook.com/thisisKhoi/"><i class="fa-brands fa-facebook fa-3x"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-container">
+        <form class="contact-form">
+          <input type="text" placeholder="Name" class="whiteColor"/>
+          <input type="text" placeholder="Email" class="whiteColor"/>
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Message"
+            class="whiteColor"
+          ></textarea>
+          <button class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <p>&copy; 2023 Khoi Vu All Right Reserved</p>
+    </footer> 
+
+    <script src="./script.js"></script>
+  </body>
+</html>
