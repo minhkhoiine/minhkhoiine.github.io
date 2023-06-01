@@ -32,34 +32,3 @@ projectTabBtns.forEach((btn) => {
     });
   });
 });
-
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  var nameInput = document.getElementById('name').value;
-  var emailInput = document.getElementById('email').value;
-  var messageInput = document.getElementById('message').value;
-
-  if (nameInput === '') {
-    alert('Please enter your name.');
-    return;
-  }
-
-  if (emailInput === '') {
-    alert('Please enter your email.');
-    return;
-  } else if (!validateEmail(emailInput)) {
-    alert('Please enter a valid email address.');
-    return;
-  }
- 
-  if (messageInput === '') {
-    alert('Please enter a message.');
-    return;
-  }
-});
-
-function validateEmail(email) {
-  var re = /\S+@\S+\.\S+/;
-  return re.test(email);
-}
