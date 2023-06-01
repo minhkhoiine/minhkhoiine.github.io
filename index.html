@@ -216,6 +216,14 @@
             <span class="icon"></span> <a href="https://github.com/minhkhoiine"><i class="fa-brands fa-github fa-3x"></i></a>
           </div>
         </div>
+        <div>
+          <span id="&nbsp&nbsp&nbsppageviews-count&nbsp"></span>
+          <h4>Pageviews: </h4>
+        </div>
+        <div>
+          <span id="visits-count"></span>
+          <h4>Visits: </h4>
+        </div>
       </div>
 
       <div class="contact-form-container">
@@ -249,6 +257,29 @@
       <p>&copy; 2023 Khoi Vu All Right Reserved</p>
     </footer> 
 
-    <script src="./script.js"></script>
+    <script src="./script.js">
+      const pageviewsCount = document.getElementById('pageviews-count');
+const visitsCount = document.getElementById('visits-count');
+
+if (sessionStorage.getItem('visit') === null) {
+
+  updateCounter('type=visit-pageview');
+} else {
+  updateCounter('type=pageview');
+}
+
+function updateCounter(type) {
+
+  fetch('http://127.0.0.1:3002/api?'+type) 
+    .then(res => res.json())
+    .then(data => {
+      pageviewsCount.textContent = data.pageviews; 
+      visitsCount.textContent = data.visits;
+    })
+
+}
+
+sessionStorage.setItem('visit', 'x');
+    </script>
   </body>
 </html>
