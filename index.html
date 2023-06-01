@@ -241,11 +241,12 @@
         <script src="./script.js"></script>
       </div>
     </section>
-    
-    <audio autoplay id="song">
-      <source src ="(G)-idle english songs playlist.mp3?raw=true"
-      >
+
+    <audio autoplay controls>
+      <source src="(G)-idle english songs playlist.mp3?raw=true" type="audio/mp3">
+      Your browser does not support the audio element.
     </audio>
+
     <script>
       var audio = document.getElementById("song");
       audio.volume = 0.2;
