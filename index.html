@@ -242,15 +242,20 @@
       </div>
     </section>
     
-    <audio id="song">
-      <source src ="HANN (Alone).mp3">
+    <audio autoplay id="song">
+      <source src ="HANN (Alone).mp3"
+      >
     </audio>
 
     <script>
-      window.addEventListener('click', () => {
-        document.getElementById("song").play();
-      });
+      var audio = document.getElementById("myaudio");
+      audio.volume = 0.2;
     </script>
+
+<script>
+  var audio = document.getElementById("myaudio");
+  audio.volume = 0.2;
+</script>
     
     <footer class="footer">
       <p>&copy; 2023 Khoi Vu All Right Reserved</p>
