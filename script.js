@@ -33,26 +33,3 @@ projectTabBtns.forEach((btn) => {
   });
 });
 
-const pageviewsCount = document.getElementById('pageviews-count');
-const visitsCount = document.getElementById('visits-count');
-
-if (sessionStorage.getItem('visit') === null) {
-  // New visit and pageview
-  updateCounter('type=visit-pageview');
-} else {
-  // Pageview
-  updateCounter('type=pageview');
-}
-
-function updateCounter(type) {
-
-  fetch('http://127.0.0.1:3002/api?'+type) 
-    .then(res => res.json())
-    .then(data => {
-      pageviewsCount.textContent = data.pageviews; 
-      visitsCount.textContent = data.visits;
-    })
-
-}
-
-sessionStorage.setItem('visit', 'x');
